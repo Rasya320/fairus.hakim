@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biodata — Fairus Hakim</title>
+  <meta name="description" content="Biodata interaktif Fairus Hakim — curriculum, skills, project, kontak." />
+  <style>
+    /* Reset sederhana */
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#7dd3fc; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#081026 0%, #071022 40%, #031018 100%);color:#e6eef8}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:1100px;margin:28px auto;padding:28px;display:grid;grid-template-columns:360px 1fr;gap:24px}
+
+    /* SIDEBAR */
+    .card{background:linear-gradient(180deg,var(--card), rgba(10,14,20,0.7));border-radius:var(--radius);padding:20px;box-shadow:0 6px 30px rgba(2,6,12,0.6);backdrop-filter: blur(6px);}
+    .photo{width:100%;height:360px;border-radius:12px;overflow:hidden;position:relative;background:linear-gradient(135deg,#07122a,#0a2236);display:flex;align-items:center;justify-content:center}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .name{font-size:1.6rem;font-weight:700;margin-top:14px}
+    .role{color:var(--muted);font-size:0.95rem;margin-top:6px}
+    .badge{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;font-size:0.8rem;color:var(--muted);margin-top:12px}
+
+    .meta{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+    .meta .row{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:10px;background:var(--glass-2)}
+    .meta .row b{display:block}
+
+    .skills{margin-top:18px}
+    .skills h4{margin:0 0 8px 0}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:linear-gradient(90deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:8px 10px;border-radius:8px;font-size:0.85rem;color:var(--muted)}
+
+    .social{display:flex;gap:8px;margin-top:16px}
+    .social a{padding:8px 10px;border-radius:10px;background:var(--glass);font-size:0.85rem}
+
+    /* MAIN */
+    .main{display:flex;flex-direction:column;gap:18px}
+    header.main-head{display:flex;justify-content:space-between;align-items:center}
+    header.main-head h1{margin:0;font-size:1.4rem}
+    header.main-head p{margin:0;color:var(--muted)}
+
+    .section{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.024), rgba(255,255,255,0.012));box-shadow:inset 0 1px 0 rgba(255,255,255,0.02)}
+
+    .about p{margin:0;color:#cfe8ff;line-height:1.5}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    .progress{height:12px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent), #60a5fa);width:40%}
+
+    .timeline{display:flex;flex-direction:column;gap:10px}
+    .tl-item{display:flex;gap:12px}
+    .tl-item .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);margin-top:6px}
+    .tl-item .body{background:transparent}
+    .tl-item .body b{display:block}
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.018), rgba(255,255,255,0.008));}
+    .project small{color:var(--muted)}
+
+    footer{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:0.9rem}
+
+    /* small screens */
+    @media (max-width:900px){.wrap{grid-template-columns:1fr;padding:18px}.photo{height:240px}.grid-2{grid-template-columns:1fr}.projects{grid-template-columns:1fr}}
+
+    /* micro animations */
+    .pulse{animation:pulse 2.6s infinite}
+    @keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(1.02);opacity:0.9}100%{transform:scale(1);opacity:1}}
+
+    /* print styles */
+    @media print{body{background:transparent;color:#000} .card, .section{box-shadow:none} .wrap{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- SIDEBAR -->
+    <aside class="card">
+      <div class="photo" aria-hidden="true">
+        <!-- placeholder image: user can replace with real photo -->
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'><rect width='100%' height='100%' fill='%23071226'/><text x='50%' y='50%' fill='%2388d1ff' font-size='48' text-anchor='middle' font-family='Arial' dy='.3em'>Foto Fairus Hakim</text></svg>" alt="Foto Fairus Hakim" />
+      </div>
+      <div class="name">Fairus Hakim <span style="font-weight:600;color:var(--accent);font-size:0.85rem;margin-left:8px">• 22 tahun</span></div>
+      <div class="role">Game Developer | UI/UX enthusiast | Pembuat hal-hal aneh yang user-friendly</div>
+      <div class="badge">Berdomisili: Bandung • Bahasa: ID, EN</div>
+
+      <div class="meta">
+        <div class="row"><div><small>Tempat, Tgl Lahir</small><br><b>Bandung, 2 Mei 2003</b></div><div><small>Agama</small><br><b>Islam</b></div></div>
+        <div class="row"><div><small>Status</small><br><b>Mahasiswa / Freelance</b></div><div><small>Telepon</small><br><b>+62 812-xxxx-xxxx</b></div></div>
+        <div class="row"><div><small>Email</small><br><b>fairus.hakim@example.com</b></div><div><small>Website</small><br><b><a href="#">fairushakim.dev</a></b></div></div>
+      </div>
+
+      <div class="skills">
+        <h4>Skills</h4>
+        <div class="skill-list">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Phaser.js</span>
+          <span class="skill">Godot</span>
+          <span class="skill">Unity (C#)</span>
+          <span class="skill">Photoshop</span>
+          <span class="skill">Figma</span>
+        </div>
+      </div>
+
+      <div class="social" aria-label="social links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+
+      <div style="margin-top:18px;font-size:0.9rem;color:var(--muted)">
+        <strong>Availability</strong>
+        <p style="margin:8px 0 0 0;color:var(--muted)">Open for freelance & kolaborasi proyek game 2D.</p>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="section main-head">
+        <div>
+          <h1>Biodata Interaktif — Fairus Hakim</h1>
+          <p>Ringkasan hidup: suka coding, kopi, dan ngebug yang akhirnya jadi fitur.</p>
+        </div>
+        <div style="text-align:right;color:var(--muted)">
+          <div style="font-weight:700">Full-Stack Game Dev</div>
+          <div>Focus: 2D Fighting / Adventure</div>
+        </div>
+      </header>
+
+      <section class="section about">
+        <h3>About</h3>
+        <p>
+          Fairus adalah pengembang game indie yang fokus pada game 2D bergaya retro-modern. Dia senang meramu cerita personal menjadi gameplay yang meaningful. Berpengalaman membuat prototype cepat, sistem pertarungan, dan manajemen asset yang efisien.
+        </p>
+      </section>
+
+      <section class="section grid-2">
+        <div>
+          <h3>Education & Certificates</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="dot"></div>
+              <div class="body"><b>SMA Teknologi — 2019 - 2022</b><small class="muted">Jurusan TKJ</small><div style="color:var(--muted);font-size:0.95rem;margin-top:6px">Belajar dasar jaringan, pemrograman dasar, dan proyek mini game sekolah.</div></div>
+            </div>
+
+            <div class="tl-item">
+              <div class="dot"></div>
+              <div class="body"><b>Bootcamp Game Dev — 2023</b><small class="muted">Online Intensive</small><div style="color:var(--muted);font-size:0.95rem;margin-top:6px">Kursus Godot, Phaser.js, arsitektur game sederhana.</div></div>
+            </div>
+
+            <div class="tl-item">
+              <div class="dot"></div>
+              <div class="body"><b>Sertifikat: Fundamental Game Design</b><small class="muted">2024</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Work & Experience</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="dot"></div>
+              <div class="body"><b>Freelance Game Dev</b><small class="muted">2022 - Sekarang</small><div style="color:var(--muted);font-size:0.95rem;margin-top:6px">Mengerjakan mini-games untuk klien lokal, sistem combat 2D, dan porting HTML5.</div></div>
+            </div>
+
+            <div class="tl-item">
+              <div class="dot"></div>
+              <div class="body"><b>Internship — Studio Indie</b><small class="muted">2023 (3 bulan)</small><div style="color:var(--muted);font-size:0.95rem;margin-top:6px">Membangun prototype dan memperbaiki performance pada build untuk Android.</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Projects</h3>
+        <div class="projects">
+          <article class="project">
+            <h4>Battle High — Prototype</h4>
+            <small>2D fighting + RPG elements</small>
+            <p style="margin-top:8px;color:var(--muted)">Sistem combo, stamina, dan meter. Menggali cerita karakter utama siswa SMA yang menyimpan masa lalu kelam. Dibangun menggunakan Godot.</p>
+            <div style="margin-top:8px;font-size:0.9rem"><b>Role:</b> Designer, Programmer, UI</div>
+          </article>
+
+          <article class="project">
+            <h4>Citampi-Lite</h4>
+            <small>Adventure RPG</small>
+            <p style="margin-top:8px;color:var(--muted)">Map besar, NPC interaktif, quest sederhana. Prototype dibuat di Phaser.js untuk web build.</p>
+            <div style="margin-top:8px;font-size:0.9rem"><b>Role:</b> Programmer, Story
+            </div>
+          </article>
+
+          <article class="project">
+            <h4>Mini Quiz App</h4>
+            <small>Untuk tugas TKJ</small>
+            <p style="margin-top:8px;color:var(--muted)">Aplikasi kuis berbasis web untuk latihan, dengan scoreboard dan localStorage.</p>
+            <div style="margin-top:8px;font-size:0.9rem"><b>Role:</b> Developer</div>
+          </article>
+
+          <article class="project">
+            <h4>Portfolio Web</h4>
+            <small>Personal</small>
+            <p style="margin-top:8px;color:var(--muted)">Landing page untuk menampilkan game, artikel, dan kontak. Responsive dan ringan.</p>
+            <div style="margin-top:8px;font-size:0.9rem"><b>Role:</b> Frontend</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Technical Snapshot</h3>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <div style="flex:1;min-width:220px">
+            <div style="display:flex;justify-content:space-between"><small>Game Programming</small><small>85%</small></div>
+            <div class="progress"><i style="width:85%"></i></div>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <div style="display:flex;justify-content:space-between"><small>UI/UX</small><small>75%</small></div>
+            <div class="progress"><i style="width:75%"></i></div>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <div style="display:flex;justify-content:space-between"><small>Pixel Art</small><small>60%</small></div>
+            <div class="progress"><i style="width:60%"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Hobbies & Interest</h3>
+        <p style="margin:0;color:var(--muted)">Mendengarkan musik lo-fi, ngoprek engine game, ngedit sprite, dan jalan-jalan sambil mikirin level design yang lebih baik.</p>
+      </section>
+
+      <section class="section">
+        <h3>Contact</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="min-width:220px">
+            <strong>Email</strong>
+            <div style="color:var(--muted);margin-top:6px">fairus.hakim@example.com</div>
+          </div>
+          <div style="min-width:220px">
+            <strong>Phone</strong>
+            <div style="color:var(--muted);margin-top:6px">+62 812-xxxx-xxxx</div>
+          </div>
+          <div style="min-width:220px">
+            <strong>Location</strong>
+            <div style="color:var(--muted);margin-top:6px">Bandung, Indonesia</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:10px">
+          <a href="#" class="card" style="padding:8px;border-radius:10px;display:inline-block">Download CV</a>
+          <a href="#" class="card" style="padding:8px;border-radius:10px;display:inline-block">Fork Project</a>
+        </div>
+      </section>
+
+      <footer style="padding:12px 18px;border-radius:12px;background:transparent">
+        <div>Generated: HTML biodata — Fairus Hakim</div>
+        <div style="color:var(--muted)">Print-friendly • Responsive • Editable</div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Small interactive tweaks: keyboard shortcut "P" to print, "T" to toggle dark accent pulse.
+    (function(){
+      const root = document.documentElement;
+      let pulsing=false;
+      document.addEventListener('keydown', (e)=>{
+        if(e.key.toLowerCase()==='p') window.print();
+        if(e.key.toLowerCase()==='t'){
+          pulsing = !pulsing;
+          document.querySelectorAll('.dot').forEach(d=> d.style.animation = pulsing ? 'pulse 1.6s infinite' : 'none');
+        }
+      });
+
+      // Tiny UI: swap sample contact info with prompt inputs (no backend) — local-only.
+      function quickEdit(){
+        const name = prompt('Ganti nama (kosong = batal)','Fairus Hakim');
+        if(name) document.querySelector('.name').childNodes[0].textContent = name + ' ';
+      }
+      // double-click header to quick edit
+      document.querySelector('header.main-head').ondblclick = quickEdit;
+
+      // Accessibility: ensure focus outlines
+      document.addEventListener('click', ()=>document.body.classList.add('user-interacted'));
+    })();
+  </script>
+</body>
+</html>
